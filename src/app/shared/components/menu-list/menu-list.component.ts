@@ -10,19 +10,19 @@ import { RouterModule } from '@angular/router';
            <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
           
-            <a class="nav-link active" aria-selected="false" aria-current="page" routerLink="/">Home</a>
+            <a class="nav-link active" aria-selected="false" aria-current="page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-selected="false" routerLink="/concepts">Concepts</a>
+            <a class="nav-link" aria-selected="false" routerLinkActive="active" routerLink="/concepts">Concepts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-selected="false" routerLink="/employee-manager">Employee Manager</a>
+            <a class="nav-link" aria-selected="false" routerLinkActive="active" routerLink="/employee-manager">Employee Manager</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-selected="false" routerLink="/about">About us</a>
+            <a class="nav-link" aria-selected="false" routerLinkActive="active" routerLink="/about">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-selected="false" routerLink="/contact">Contact us</a>
+            <a class="nav-link" aria-selected="false" routerLinkActive="active" routerLink="/contact">Contact us</a>
           </li>
          </ul>
   `,

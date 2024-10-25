@@ -91,8 +91,8 @@
         tabindex="0"
       >
         <p>Custom Event Binding</p>
-        <button (click)="clickme()" [disabled]="isDisabled">{{dynamicClick}}</button>
-        <app-profile></app-profile>
+        <button (click)="clickme($event)" [disabled]="isDisabled">{{dynamicClick}}</button>
+        <app-profile ></app-profile>
         <app-reports (report)="onReport($event)"></app-reports>
 
         <p>Report Value : {{reportValue.id}}  {{reportValue.name}}</p>
@@ -110,13 +110,13 @@
         <ng-template #elsepart>
           <div class="alert alert-danger"> It is False</div>
         </ng-template>
-    </div>
+    
 
      <p>OrderList :</p>
      <ol>
       <li *ngFor="let skill of skills; index as i" >{{i+1 }}{{skill}}</li>
      </ol>
-        
+    </div> 
     </div>
       
     <div appColorizer>

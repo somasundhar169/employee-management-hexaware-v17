@@ -35,14 +35,10 @@ export class ConceptsComponent {
     name:''
   }
 
-  clickme(){
-       if(this.dynamicClick==='Click Me'){
-        this.dynamicClick='Clicked'  
-       }
-       else{
-        this.dynamicClick='Click Me'
-        this.isDisabled=true
-       }
+  clickme(event:any){
+    event.target.disabled=true
+    this.dynamicClick='Clicked'
+    console.log('disabled');
   }
 
   onReport(event:any){
